@@ -1,0 +1,43 @@
+.todoList {
+  padding-top: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.todoList input {
+  width: 300px;
+  padding: 5px 0;
+}
+.addNewItemButton {
+  padding: 5px 15px;
+  background-color: lightblue;
+}
+
+.card {
+  margin: 10px 0; 
+  display: flex;
+  justify-content: space-between;
+} 
+
+.card button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.showMore {
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.showMore:hover {
+  background-color: lightgreen;
+}
