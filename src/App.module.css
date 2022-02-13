@@ -1,0 +1,18 @@
+nav {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.navList {
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.selected {
+  font-weight: 600;
+  color: red
+}

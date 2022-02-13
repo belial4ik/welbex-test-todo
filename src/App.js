@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import styles from './App.module.css';
+import Main from './pages/main/main'
+import TodoList from './pages/todo-list/todo-list'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <ul className={styles.navList}>
+          <li>
+            <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to='/'>Main</NavLink>
+          </li>
+          <li>
+            <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to='todos'>Todo List</NavLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
