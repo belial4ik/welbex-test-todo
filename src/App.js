@@ -1,22 +1,21 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import styles from './App.module.css';
+import { Route, Routes } from 'react-router-dom'
+
+//coustom components
+import Header from './components/header/header';
 import Main from './pages/main/main'
 import TodoList from './pages/todo-list/todo-list'
+import Error from './components/error/error'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <nav>
-        <ul className={styles.navList}>
-          <li>
-            <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to='/'>Main</NavLink>
-          </li>
-          <li>
-            <NavLink className={(navData) => navData.isActive ? styles.selected : ''} to='todos'>Todo List</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Header />
+      <Routes>
+        <Route exact path='/' element={<Main />} />
+        <Route path='/todos' element={<TodoList />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
     </div>
   );
 }
