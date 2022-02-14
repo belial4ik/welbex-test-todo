@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getTodoList } from '../../services/todoService';
 //styles
-import classes from './todo-list.module.css'
+import classes from './todo-list.module.css';
 
 //custom components
-import Todo from '../../components/todo/todo'
+import Todo from '../../components/todo';
 
 const TodoList = (props) => {
   const { loadMore, visible } = props;
