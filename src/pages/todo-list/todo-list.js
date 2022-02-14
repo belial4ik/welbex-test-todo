@@ -1,5 +1,5 @@
-import axios from 'axios'
 import React, { useState, useEffect } from 'react'
+import { getTodoList } from '../../services/todoService'
 import classes from './todo-list.module.css'
 
 const TodoList = () => {
@@ -7,9 +7,7 @@ const TodoList = () => {
   const [todos, setTodos] = useState([])
   const [ visible, setVisible ] = useState(9)
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/todos")
-      .then(res => setTodos(res.data))
-    
+    getTodoList().then(res => setTodos(res.data))
   }, [])
 
   const loadMore = () => {
