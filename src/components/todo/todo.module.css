@@ -1,0 +1,19 @@
+.completed {
+  text-decoration: line-through;
+}
+
+.card {
+  margin: 10px 0; 
+  display: flex;
+  justify-content: space-between;
+} 
+
+.card button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: tomato;
+  color: #fff;
+}
