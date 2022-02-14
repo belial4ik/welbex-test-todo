@@ -1,8 +1,6 @@
-import { GET_VISIBLE } from '../actions/types'
+import { GET_VISIBLE } from '../actions/types';
 
-const initialState = {
-  visible: 9
-}
+const initialState = { visible: 10 };
 
 
 export const visibleReducer = (state = initialState, action) => {
@@ -13,4 +11,4 @@ export const visibleReducer = (state = initialState, action) => {
     default:
       return state
   }
-}
+};

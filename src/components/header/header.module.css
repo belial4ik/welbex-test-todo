@@ -1,11 +1,6 @@
 nav {
   height: 50px;
-  /* border: 1px solid black; */
-  box-shadow:
-  3.9px 9.7px 10px rgba(0, 0, 0, 0.13),
-  21px 53px 80px rgba(0, 0, 0, 0.053)
-;
-
+  box-shadow: 3.9px 9.7px 10px rgba(0, 0, 0, 0.13),21px 53px 80px rgba(0, 0, 0, 0.053);
 }
 
 .navList {

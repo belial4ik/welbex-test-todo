@@ -1,1 +1,1 @@
-export const GET_VISIBLE = "GET_VISIBLE"
+export const GET_VISIBLE = "GET_VISIBLE";

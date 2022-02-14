@@ -1,12 +1,6 @@
-import React from 'react'
+import React from 'react';
+import classes from './error.module.css';
 
-const style = {
-  textAlign: 'center',
-  paddingTop: '50px'
-}
+const Error = () => <h1 className={classes.error}>Url path is not correct</h1>;
 
-export default function Error() {
-  return (
-    <h1 style={style}>Ведите корректный путь</h1>
-  )
-}
+export default Error;

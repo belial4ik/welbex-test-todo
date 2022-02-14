@@ -4,4 +4,4 @@ export const visibleAction = () => {
   return {
     type: VISIBLE_BUTTON 
   }
-}
+};
