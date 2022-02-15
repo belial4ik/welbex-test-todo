@@ -46,7 +46,7 @@ const TodoList = (props) => {
       completed: false
     }
     const newItem = [...todos, item];
-    if(value == '') {
+    if(value === '') {
       alert("input value not be empty")
     } else {
       setTodos(newItem);
